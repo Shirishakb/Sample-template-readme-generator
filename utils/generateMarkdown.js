@@ -48,43 +48,43 @@ function renderLicenseSection(license) {
 
 // Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
-          ${renderLicenseBadge(data.license)}
+  return `#Title: ${data.title}
+${renderLicenseBadge(data.license)}
 
-          ## Description
-          ${data.description}
+## Description
+${data.description}
 
-          ## Table of Contents
-          * [Installation](#installation)
-          * [Usage](#usage)
-          * [Contribution](#contribution)
-          * [Tests](#tests)
-          * [License](#license)
-          * [Questions](#questions)
-          * [Video](#video)
+## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contribution](#contribution)
+  * [Tests](#tests)
+  * [License](#license)
+  * [Questions](#questions)
+  * [Video](#video)
           
-          ## Installation
-          ${data.installation}
+## Installation
+${data.installation}
 
-          ## Usage
-          ${data.usage}
+## Usage
+${data.usage}
 
-          ## Contribution
-          ${data.contribution}
+## Contribution
+${data.contribution}
 
-          ## Tests
-          ${data.tests}
+## Tests
+${data.tests}
 
-          ## License
-          ${renderLicenseSection(data.license)}
+## License
+${renderLicenseSection(data.license)}
 
-          ## Questions
-          * GitHub: [${data.github}](https://github.com/${data.github})
-          * Email: [${data.email}](mailto:${data.email})
+## Questions
+ * GitHub: [${data.github}](https://github.com/${data.github})
+ * Email: [${data.email}](mailto:${data.email})
           
-          ## Video
-          [Click here to view the video](${data.video})
-          `;
+## Video
+[Click here to view the video](${data.video})
+`;
 }
 
 export default generateMarkdown;
